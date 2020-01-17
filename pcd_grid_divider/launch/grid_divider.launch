@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="map_tools" type="pcd_grid_divider" name="pcd_grid_divider" output="screen">
+    <param name="point_type" type="string" value="PointXYZI"/>　
+    <param name="grid_size" type="int" value="50"/>　<!--网格大小　单位为米-->
+    <param name="input_directory" type="string" value="/home/catalina/workspace/github_ws/src/map/pcd"/>
+    <param name="output_directory" type="string" value="/home/catalina/workspace/github_ws/src/map/grid_pcd"/>
+  </node>
+</launch>
